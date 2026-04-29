@@ -83,7 +83,7 @@ public class Menu {
 		}
 	
 		public static void sobre() {
-			System.out.println("\n**************************************");
+			System.out.println("\n***************************************");
 			System.out.println("Projeto Desenvolvido por: Bruna Mendes");
 			System.out.println("Generation Brasil - brunam@generation.org");
 			System.out.println("github.com/bruna-dsmendes");
