@@ -1,6 +1,6 @@
 package conta_bancaria.model;
 
-public class Conta {
+public abstract class Conta {
 
 	public Conta(int numero, int agencia, int tipo, String titular, float saldo) {
 		this.numero = numero;
