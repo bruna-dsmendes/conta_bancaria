@@ -8,12 +8,14 @@ public abstract class Conta {
 		this.tipo = tipo;
 		this.titular = titular;
 		this.saldo = saldo;
+	
 	}
 	private int numero;
 	private int agencia;
 	private int tipo;
 	private String titular;
 	private float saldo;
+	private float limite;
 	
 	
 	public int getNumero() {
@@ -82,7 +84,7 @@ public abstract class Conta {
 			tipo = "Conta Corrente";
 			break;
 		case 2:
-			tipo = "Conta Poupança";
+			tipo = "Conta Poupanca";
 			break;
 		}
 		
@@ -95,5 +97,13 @@ public abstract class Conta {
 		System.out.println("Titular: " + this.titular);
 		System.out.printf("Saldo: R$ %.2f%n", this.saldo);
 		
+	}
+
+	public float getLimite() {
+		return limite;
+	}
+
+	public void setLimite(float limite) {
+		this.limite = limite;
 	}
 }
